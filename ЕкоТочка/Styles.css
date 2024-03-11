@@ -1,0 +1,941 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+  font-family: 'Intern', sans-serif;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 20;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0%;
+}
+
+
+.logo {
+    width: 119px;
+    height: 106px;
+}
+
+.title {
+    color: #1C3633;
+    font-size: calc(12px + 0.9vw);
+    font-weight: bold;
+}
+
+.slogan {
+    color: rgba(0, 0, 0, 0.58);
+    font-size: calc(12px + 0.9vw);
+    position: absolute;
+    top: 40px;
+    left: 7%;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+    right: 7%;
+}
+
+.category-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.categories a {
+    color: #06A82A;
+    text-decoration: underline;
+    font-size: calc(12px + 0.9vw);
+}
+
+.phone {
+    font-size: calc(16px + 1.0vw);
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    top: calc(40px + 12px + 12px + 0.9vw);
+    right: 7%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 62px;
+    position: absolute;
+    top: 180px;
+    background-color: #42BD5D; 
+    padding-top: calc(20px - 0.5vw);
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    font-size: calc(18px + 1.0vw);
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF; 
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #42BD5D;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid white;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white; color: #42BD5D;}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: calc(180px + 62px);
+}
+
+.main-image {
+    width: 50%; /*784px*/
+    height: 50%;
+    border: 2px solid black;
+}
+
+.main-text {
+    font-size: calc(12px + 3.0vw);
+    position: relative;
+    left: -9%;
+    top: calc(-3px - 4.2vw);
+}
+
+.container {
+    position: absolute;
+    left: 50.5%;
+    top: 430px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* відстань між елементами */
+}
+
+.item {
+    display: flex;
+    gap: 10px; /* відстань між зображенням та текстом */
+}
+
+.item img {
+    width: 98px;
+    height: 98px; /* зберігає пропорції зображення */
+}
+
+.item p {
+    margin-top: -3px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: black;
+    white-space: pre-wrap; /* дозволяє тексту переноситися на новий рядок */
+}
+
+.info-container {
+    position: absolute;
+    left: 0;
+    top: 860px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* відстань між елементами */
+}
+
+.info-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+}
+
+.info-list {
+    margin-top: -40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    width: 90%;
+    text-align: left;
+}
+
+
+.reviews-container {
+    position: absolute;
+    left: 5%;
+    top: 1700px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* відстань між елементами */
+}
+
+.reviews-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    text-align: left;
+    width: 100%;
+}
+
+.review-item {
+    display: flex;
+    gap: 10px; /* відстань між зображенням та текстом */
+}
+
+.review-image {
+    width: 409px;
+    height: auto; /* зберігає пропорції зображення */
+    border: 2px solid black;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* відстань між підзаголовком та текстом */
+}
+
+.review-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.review-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    text-align: left;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 194px;
+    background-color: #B4C6B7;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.phone-number, .phone-label, .logog, .logo-label, .privacy-policy {
+    position: absolute;
+}
+
+.phone-number {
+    left: 100px;
+    top: 70px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.phone-label {
+    left: 130px;
+    top: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.logog {
+    left: 620px;
+    top: 50px;
+    width: 134px;
+    height: 115px;
+}
+
+.logo-label {
+    left: 600px;
+    top: 170px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.privacy-policy {
+    left: 850px;
+    top: 80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.57);
+    text-decoration: underline;
+}
+
+
+.caption {
+    text-align: center;
+    position: absolute;
+    top: 250px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+
+}
+
+.contact-info {
+    position: absolute;
+    top: 310px;
+    width: 90%;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.container-products {
+    position: absolute;
+    width: 100%;
+    top: 270px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Додаємо цю властивість */
+    margin-top: 30px;
+}
+
+
+.product-item {
+    cursor: pointer;
+    width: 40%; /* Змінено на 30%, щоб вмістити три елементи в рядок */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    width: 271px;
+    height: auto;
+}
+
+.product-info {
+    width: 262px;
+    height: 38px;
+    background-color: #47A045;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.product-name, .product-price {
+    font-family: 'Tienne', sans-serif;
+    color: white;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.product-price {
+    font-size: 12px;
+}
+
+.product-item:hover .product-info {
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.product-item:hover .product-name,
+.product-item:hover .product-price {
+    color: #47A045;
+    transition: color 0.2s ease-in-out;
+}
+
+nav {
+    display: none;
+ }
+
+
+.background-image-body::before {
+    content: "";
+    background: url('images/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    width: 100%;  
+}
+
+.background-gif-body::before {
+    content: "";
+    background: url('images/background_moving.gif') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    width: 100%;  
+} 
+
+
+#unique-review {
+    margin-top: 600px; /* Змініть це значення на бажану відстань */
+}
+
+
+form {
+    position: absolute;
+    top: 910px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    background-color: white;
+}
+
+form label, form input, form textarea {
+    color: #06A82A;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+form textarea {
+    height: 300px;
+    color: black;
+}
+
+form input[type="submit"] {
+    margin-left: 80%;
+    width: 20%;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #06A82A;
+    color: #06A82A;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #06A82A;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .slogan {
+        font-size: 18px;
+        left: -10px;
+    }
+    .categories a {
+        font-size: 16px;
+    }
+    .categories {
+        right: 5px;
+    }
+    .phone {
+        right: 5px;
+    }
+    .title {
+        font-size: 25px;
+    }
+
+    .navbar {
+        height: 124px; /* збільшуємо висоту в два рази */
+        flex-direction: row; /* розміщуємо елементи горизонтально */
+        flex-wrap: wrap; /* дозволяємо елементам переноситися на новий рядок */
+        justify-content: space-evenly; /* розподіляємо елементи рівномірно */
+    }
+
+    .navbar a {
+        font-size: 30px;
+        text-decoration: none;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .main-text {
+        top: 38px;
+        text-align: center;
+        width: 100%;
+        left: 0px;
+    }
+    .main-text br:first-of-type {
+        display: none;
+    }
+
+    .container {
+        position: absolute;
+        left: 5%;
+        top: 380px;
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* відстань між елементами */
+    }
+    .info-container {
+        position: absolute;
+        left: 0;
+        top: 980px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* відстань між елементами */
+    }
+    .info-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    }
+
+    .info-list {
+    margin-top: -40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    width: 90%;
+    text-align: left;
+    }
+
+    .reviews-container {
+        position: absolute;
+        left: 5%;
+        top: 2040px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px; /* відстань між елементами */
+    }
+
+    .reviews-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+    }
+    .review-item {
+        margin-top: -50px;
+        display: flex;
+        gap: 0px; /* відстань між зображенням та текстом */
+    }
+
+    .review-image {
+        display: none;
+    }
+
+    .review-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0px; /* відстань між підзаголовком та текстом */
+    }
+
+    .review-subtitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .review-text {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        margin-top: -30px;
+    }
+
+    footer {
+    position: absolute;
+    width: 100%;
+    height: 124px;
+    background-color: #B4C6B7;
+    box-sizing: border-box;
+    }
+
+    .phone-number, .phone-label, .logog, .logo-label, .privacy-policy {
+        position: absolute;
+    }
+
+    .phone-number {
+        left: 30px;
+        top: 40px;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .phone-label {
+        left: 40px;
+        top: 60px;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+    }
+
+    .logog {
+        left: 220px;
+        top: 20px;
+        width: 90px;
+        height: auto;
+    }
+
+    .logo-label {
+        left: 210px;
+        top: 100px;
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .privacy-policy {
+        left: 320px;
+        top: 40px;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.57);
+        text-decoration: underline;
+    }
+
+
+
+
+}
+
+@media (max-width: 600px) {
+    .caption {
+    text-align: center;
+    position: absolute;
+    top: 310px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    }
+
+    .contact-info {
+    position: absolute;
+    top: 340px;
+    width: 90%;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-products {
+        position: absolute;
+        width: 100%;
+        top: 340px;
+    }
+
+    .product-row {
+        display: flex;
+        flex-direction: column; /* розміщуємо елементи вертикально */
+        align-items: center; /* центруємо елементи по горизонталі */
+        margin-top: 0px;
+    }
+
+    .product-item {
+        width: 40%; /* Змінено на 30%, щоб вмістити три елементи в рядок */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .product-image {
+        width: 300px;
+        height: auto;
+    }
+
+    .product-info {
+        width: 290px;
+        height: 38px;
+        background-color: #47A045;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
+    }
+
+    .product-name, .product-price {
+        font-family: 'Tienne', sans-serif;
+        color: white;
+    }
+
+    .product-name {
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    .product-price {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {display: none;}
+
+    .dropdown:hover .dropbtn {background-color: #42BD5D; color: white;}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: -390px;
+    left: -60px;
+    z-index: 30;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar-burger {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar-burger .menu-items {
+  display: flex;
+}
+
+.navbar-burger .nav-container li {
+  list-style: none;
+}
+
+.navbar-burger .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar-burger .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 10px;
+  left: 15px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0.9;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar-burger .menu-items {
+  padding-top: 120px;
+  background-color: white;
+  opacity: 0.9;
+  height: 462vh;
+  width: 90%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar-burger .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 16px;
+}
+
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+}
+
+@media (max-width: 600px) {
+        #unique-review {
+        margin-top: 540px; /* Змініть це значення на бажану відстань */
+    }
+
+
+    form {
+        position: absolute;
+        top: 910px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        background-color: white;
+    }
+
+    form label, form input, form textarea {
+        color: #06A82A;
+        font-size: 16px;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+    }
+
+    form textarea {
+        height: 300px;
+        color: black;
+    }
+
+    form input[type="submit"] {
+        margin-left: 60%;
+        width: 40%;
+        font-size: 24px;
+        font-weight: bold;
+        border: 1px solid #06A82A;
+        color: #06A82A;
+        transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #06A82A;
+        color: white;
+        cursor: pointer;
+    }
+
+
+}
